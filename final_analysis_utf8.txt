@@ -1,0 +1,71 @@
+Analyzing BallotEye...                                          
+
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<AppUser?>' - lib\core\routing\app_router.dart:37:30 - undefined_getter
+warning - Unused import: 'package:firebase_core/firebase_core.dart' - lib\core\services\firebase_initialization_service.dart:1:8 - unused_import
+  error - 1 positional argument expected by 'initialize', but 0 found - lib\core\services\firebase_initialization_service.dart:14:59 - not_enough_positional_arguments
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\core\theme\app_theme.dart:27:16 - argument_type_not_assignable
+  error - The argument type 'CardTheme' can't be assigned to the parameter type 'CardThemeData?'.  - lib\core\theme\app_theme.dart:55:16 - argument_type_not_assignable
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:11:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:12:24 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:13:29 - avoid_print
+  error - Missing concrete implementations of 'getter mixin _$IncidentActivityModel on Object.id', 'getter mixin _$IncidentActivityModel on Object.note', 'getter mixin _$IncidentActivityModel on Object.timestamp', 'getter mixin _$IncidentActivityModel on Object.type', and 3 more - lib\features\audit\data\models\incident_activity_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementation of 'abstract class AuthDatasource.updateFcmToken' - lib\features\auth\data\datasources\firebase_auth_datasource.dart:8:7 - non_abstract_class_inherits_abstract_member
+  error - A value of type 'AppUser' can't be returned from the method 'authStateChanges' because it has a return type of 'Stream<AppUser?>' - lib\features\auth\data\datasources\firebase_auth_datasource.dart:77:14 - return_of_invalid_type
+  error - Undefined name 'doc' - lib\features\auth\data\datasources\firebase_auth_datasource.dart:77:36 - undefined_identifier
+  error - Expected a class member - lib\features\auth\data\datasources\firebase_auth_datasource.dart:78:6 - expected_class_member
+  error - Expected a class member - lib\features\auth\data\datasources\firebase_auth_datasource.dart:78:7 - expected_class_member
+  error - Undefined name '_firestore' - lib\features\auth\data\datasources\firebase_auth_datasource.dart:84:13 - undefined_identifier
+  error - The function 'debugPrint' isn't defined - lib\features\auth\data\datasources\firebase_auth_datasource.dart:91:7 - undefined_function
+  error - Expected a method, getter, setter or operator declaration - lib\features\auth\data\datasources\firebase_auth_datasource.dart:94:1 - expected_executable
+  error - Missing concrete implementations of 'getter mixin _$AppUserModel on Object.areaIds', 'getter mixin _$AppUserModel on Object.createdAt', 'getter mixin _$AppUserModel on Object.email', 'getter mixin _$AppUserModel on Object.id', and 3 more - lib\features\auth\data\models\app_user_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\auth\presentation\controllers\auth_controller.dart:1:8 - depend_on_referenced_packages
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\presentation\views\login_view.dart:65:40 - use_build_context_synchronously
+warning - Unused import: 'package:go_router/go_router.dart' - lib\features\auth\presentation\views\register_view.dart:6:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\presentation\views\register_view.dart:86:40 - use_build_context_synchronously
+  error - Missing concrete implementations of 'getter mixin _$IncidentCommentModel on Object.id', 'getter mixin _$IncidentCommentModel on Object.sentiment', 'getter mixin _$IncidentCommentModel on Object.text', 'getter mixin _$IncidentCommentModel on Object.timestamp', and 3 more - lib\features\comments\data\models\incident_comment_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$AreaStatsModel on Object.avgResolveHours', 'getter mixin _$AreaStatsModel on Object.resolvedCount', 'getter mixin _$AreaStatsModel on Object.score', 'getter mixin _$AreaStatsModel on Object.submittedCount', and 1 more - lib\features\leaderboard\data\models\area_stats_model.dart:8:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$ElectionAreaModel on Object.code', 'getter mixin _$ElectionAreaModel on Object.id', 'getter mixin _$ElectionAreaModel on Object.name', 'getter mixin _$ElectionAreaModel on Object.stats', and 1 more - lib\features\leaderboard\data\models\election_area_model.dart:9:7 - non_abstract_class_inherits_abstract_member
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\leaderboard\presentation\controllers\leaderboard_controller.dart:1:8 - depend_on_referenced_packages
+  error - Undefined class 'AreaStatsRef' - lib\features\leaderboard\presentation\controllers\leaderboard_controller.dart:21:32 - undefined_class
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\leaderboard\presentation\views\leaderboard_view.dart:136:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\leaderboard\presentation\views\leaderboard_view.dart:138:55 - deprecated_member_use
+  error - Missing concrete implementations of 'getter mixin _$MonitoringAreaModel on Object.geoJson', 'getter mixin _$MonitoringAreaModel on Object.id', 'getter mixin _$MonitoringAreaModel on Object.name', 'getter mixin _$MonitoringAreaModel on Object.type', and 1 more - lib\features\map\data\models\monitoring_area_model.dart:8:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$IncidentReportModel on Object.category', 'getter mixin _$IncidentReportModel on Object.description', 'getter mixin _$IncidentReportModel on Object.evidenceHash', 'getter mixin _$IncidentReportModel on Object.id', and 10 more - lib\features\reports\data\models\incident_report_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\reports\presentation\controllers\comments_controller.dart:1:8 - depend_on_referenced_packages
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<AppUser?>' - lib\features\reports\presentation\controllers\comments_controller.dart:19:51 - undefined_getter
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\reports\presentation\controllers\incident_reporting_controller.dart:2:8 - depend_on_referenced_packages
+  error - Missing concrete implementations of 'getter mixin _$IncidentReportingState on Object.error', 'getter mixin _$IncidentReportingState on Object.isSubmitting', 'getter mixin _$IncidentReportingState on Object.latitude', 'getter mixin _$IncidentReportingState on Object.longitude', and 1 more - lib\features\reports\presentation\controllers\incident_reporting_controller.dart:10:7 - non_abstract_class_inherits_abstract_member
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\reports\presentation\controllers\map_controller.dart:1:8 - depend_on_referenced_packages
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\reports\presentation\controllers\moderation_controller.dart:1:8 - depend_on_referenced_packages
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<AppUser?>' - lib\features\reports\presentation\controllers\moderation_controller.dart:12:52 - undefined_getter
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<AppUser?>' - lib\features\reports\presentation\controllers\moderation_controller.dart:30:51 - undefined_getter
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<List<IncidentReport>>' - lib\features\reports\presentation\controllers\moderation_controller.dart:47:32 - undefined_getter
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<AppUser?>' - lib\features\reports\presentation\controllers\moderation_controller.dart:50:51 - undefined_getter
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\reports\presentation\controllers\report_detail_controller.dart:1:8 - depend_on_referenced_packages
+  error - Undefined class 'ReportDetailRef' - lib\features\reports\presentation\controllers\report_detail_controller.dart:10:37 - undefined_class
+  error - Undefined class 'ReportActivityRef' - lib\features\reports\presentation\controllers\report_detail_controller.dart:15:47 - undefined_class
+  error - Undefined class 'ReportCommentsRef' - lib\features\reports\presentation\controllers\report_detail_controller.dart:20:46 - undefined_class
+   info - The imported package 'riverpod_annotation' isn't a dependency of the importing package - lib\features\reports\presentation\controllers\reports_feed_controller.dart:1:8 - depend_on_referenced_packages
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<List<IncidentReport>>' - lib\features\reports\presentation\controllers\reports_feed_controller.dart:21:32 - undefined_getter
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\create_report_view.dart:120:42 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\create_report_view.dart:123:21 - use_build_context_synchronously
+  error - The name 'File' isn't a type, so it can't be used as a type argument - lib\features\reports\presentation\views\create_report_view.dart:146:14 - non_type_as_type_argument
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_detail_view.dart:111:28 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_detail_view.dart:300:42 - deprecated_member_use
+  error - The getter 'sentiment_extremely_satisfied' isn't defined for the type 'Icons' - lib\features\reports\presentation\views\incident_detail_view.dart:343:22 - undefined_getter
+  error - The getter 'sentiment_extremely_dissatisfied' isn't defined for the type 'Icons' - lib\features\reports\presentation\views\incident_detail_view.dart:347:22 - undefined_getter
+  error - The getter 'sentiment_extremely_satisfied' isn't defined for the type 'Icons' - lib\features\reports\presentation\views\incident_detail_view.dart:447:36 - undefined_getter
+  error - The getter 'sentiment_extremely_dissatisfied' isn't defined for the type 'Icons' - lib\features\reports\presentation\views\incident_detail_view.dart:449:36 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:68:86 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:158:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:192:22 - deprecated_member_use
+warning - Unused import: 'package:ballot_eye/core/services/location_service.dart' - lib\features\reports\presentation\views\incident_map_view.dart:6:8 - unused_import
+  error - The method 'getCurrentLocation' isn't defined for the type 'LocationService' - lib\features\reports\presentation\views\incident_map_view.dart:33:34 - undefined_method
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<List<IncidentReport>>' - lib\features\reports\presentation\views\incident_map_view.dart:75:49 - undefined_getter
+  error - The getter 'valueOrNull' isn't defined for the type 'AsyncValue<List<IncidentReport>>' - lib\features\reports\presentation\views\incident_map_view.dart:76:50 - undefined_getter
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_map_view.dart:125:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\moderation_hub_view.dart:153:22 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\moderation_hub_view.dart:235:40 - use_build_context_synchronously
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+
+67 issues found. (ran in 1.6s)

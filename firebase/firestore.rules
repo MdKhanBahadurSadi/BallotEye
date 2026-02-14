@@ -1,0 +1,64 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // --- Helpers ---
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && getUserData().role == 'admin';
+    }
+    
+    function isModerator() {
+      return isAuthenticated() && (getUserData().role == 'moderator' || getUserData().role == 'admin');
+    }
+
+    // --- Rules ---
+
+    // Users Collection: Read/Write self, Admin can do all
+    match /users/{userId} {
+      allow read, write: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+    }
+
+    // Reports Collection
+    match /reports/{reportId} {
+      // Observers can read incidents. Public access can be enabled if needed.
+      allow read: if isAuthenticated();
+      
+      // Any authenticated user can submit a report
+      allow create: if isAuthenticated();
+      
+      // Updates: Admins or scoped Moderators
+      allow update: if isAdmin() || (
+        isModerator() && 
+        (resource.data.areaId in getUserData().areaIds)
+      );
+
+      // Activity Sub-collection
+      match /activity/{activityId} {
+        allow read: if isAuthenticated();
+        allow write: if isModerator();
+      }
+
+      // Comments Sub-collection
+      match /comments/{commentId} {
+        allow read: if isAuthenticated();
+        allow create: if isAuthenticated();
+        allow write: if isAdmin(); // Only admins can delete/edit comments for moderation
+      }
+    }
+    
+    // Areas & Stats
+    match /areas/{areaId} {
+      allow read: if isAuthenticated();
+      allow write: if isAdmin();
+    }
+  }
+}

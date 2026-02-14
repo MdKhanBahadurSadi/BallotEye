@@ -1,0 +1,42 @@
+Analyzing BallotEye...                                          
+
+warning - Unused import: 'package:firebase_core/firebase_core.dart' - lib\core\services\firebase_initialization_service.dart:1:8 - unused_import
+warning - Unused import: 'package:ballot_eye/core/providers/firebase_providers.dart' - lib\core\services\firebase_initialization_service.dart:4:8 - unused_import
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:11:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:12:24 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:13:29 - avoid_print
+  error - Missing concrete implementations of 'getter mixin _$IncidentActivityModel on Object.id', 'getter mixin _$IncidentActivityModel on Object.note', 'getter mixin _$IncidentActivityModel on Object.timestamp', 'getter mixin _$IncidentActivityModel on Object.type', and 3 more - lib\features\audit\data\models\incident_activity_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$AppUserModel on Object.areaIds', 'getter mixin _$AppUserModel on Object.createdAt', 'getter mixin _$AppUserModel on Object.email', 'getter mixin _$AppUserModel on Object.id', and 3 more - lib\features\auth\data\models\app_user_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\presentation\views\login_view.dart:65:40 - use_build_context_synchronously
+warning - Unused import: 'package:go_router/go_router.dart' - lib\features\auth\presentation\views\register_view.dart:6:8 - unused_import
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\presentation\views\register_view.dart:86:40 - use_build_context_synchronously
+  error - Missing concrete implementations of 'getter mixin _$IncidentCommentModel on Object.id', 'getter mixin _$IncidentCommentModel on Object.sentiment', 'getter mixin _$IncidentCommentModel on Object.text', 'getter mixin _$IncidentCommentModel on Object.timestamp', and 3 more - lib\features\comments\data\models\incident_comment_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$AreaStatsModel on Object.avgResolveHours', 'getter mixin _$AreaStatsModel on Object.resolvedCount', 'getter mixin _$AreaStatsModel on Object.score', 'getter mixin _$AreaStatsModel on Object.submittedCount', and 1 more - lib\features\leaderboard\data\models\area_stats_model.dart:8:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$ElectionAreaModel on Object.code', 'getter mixin _$ElectionAreaModel on Object.id', 'getter mixin _$ElectionAreaModel on Object.name', 'getter mixin _$ElectionAreaModel on Object.stats', and 1 more - lib\features\leaderboard\data\models\election_area_model.dart:9:7 - non_abstract_class_inherits_abstract_member
+  error - Undefined class 'AreaStatsRef' - lib\features\leaderboard\presentation\controllers\leaderboard_controller.dart:21:32 - undefined_class
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\leaderboard\presentation\views\leaderboard_view.dart:136:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\leaderboard\presentation\views\leaderboard_view.dart:138:55 - deprecated_member_use
+  error - Missing concrete implementations of 'getter mixin _$MonitoringAreaModel on Object.geoJson', 'getter mixin _$MonitoringAreaModel on Object.id', 'getter mixin _$MonitoringAreaModel on Object.name', 'getter mixin _$MonitoringAreaModel on Object.type', and 1 more - lib\features\map\data\models\monitoring_area_model.dart:8:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$IncidentReportModel on Object.category', 'getter mixin _$IncidentReportModel on Object.description', 'getter mixin _$IncidentReportModel on Object.evidenceHash', 'getter mixin _$IncidentReportModel on Object.id', and 10 more - lib\features\reports\data\models\incident_report_model.dart:10:7 - non_abstract_class_inherits_abstract_member
+  error - Missing concrete implementations of 'getter mixin _$IncidentReportingState on Object.error', 'getter mixin _$IncidentReportingState on Object.isSubmitting', 'getter mixin _$IncidentReportingState on Object.latitude', 'getter mixin _$IncidentReportingState on Object.longitude', and 1 more - lib\features\reports\presentation\controllers\incident_reporting_controller.dart:10:7 - non_abstract_class_inherits_abstract_member
+  error - Undefined class 'ReportDetailRef' - lib\features\reports\presentation\controllers\report_detail_controller.dart:10:37 - undefined_class
+  error - Undefined class 'ReportActivityRef' - lib\features\reports\presentation\controllers\report_detail_controller.dart:15:47 - undefined_class
+  error - Undefined class 'ReportCommentsRef' - lib\features\reports\presentation\controllers\report_detail_controller.dart:20:46 - undefined_class
+  error - The getter 'incidentCategories' isn't defined for the type 'AppConstants' - lib\features\reports\presentation\views\create_report_view.dart:54:35 - undefined_getter
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\create_report_view.dart:121:42 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\create_report_view.dart:124:21 - use_build_context_synchronously
+   info - Unnecessary use of multiple underscores - lib\features\reports\presentation\views\create_report_view.dart:159:31 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_detail_view.dart:111:28 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\features\reports\presentation\views\incident_detail_view.dart:150:31 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\reports\presentation\views\incident_detail_view.dart:258:26 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_detail_view.dart:300:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:68:86 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:158:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:192:22 - deprecated_member_use
+warning - Unused import: 'package:ballot_eye/core/services/location_service.dart' - lib\features\reports\presentation\views\incident_map_view.dart:6:8 - unused_import
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_map_view.dart:125:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\moderation_hub_view.dart:153:22 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\moderation_hub_view.dart:235:40 - use_build_context_synchronously
+warning - Unused import: 'package:ballot_eye/main.dart' - test\widget_test.dart:13:8 - unused_import
+
+38 issues found. (ran in 2.5s)

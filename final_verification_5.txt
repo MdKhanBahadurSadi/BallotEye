@@ -1,0 +1,25 @@
+Analyzing BallotEye...                                          
+
+warning - Duplicate import - lib\core\utils\app_services.dart:3:8 - duplicate_import
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:13:5 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:14:24 - avoid_print
+   info - Don't invoke 'print' in production code - lib\core\utils\app_services.dart:15:29 - avoid_print
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\presentation\views\login_view.dart:65:40 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps - lib\features\auth\presentation\views\register_view.dart:86:40 - use_build_context_synchronously
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\leaderboard\presentation\views\leaderboard_view.dart:136:36 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\leaderboard\presentation\views\leaderboard_view.dart:138:55 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\create_report_view.dart:121:42 - use_build_context_synchronously
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\create_report_view.dart:124:21 - use_build_context_synchronously
+   info - Unnecessary use of multiple underscores - lib\features\reports\presentation\views\create_report_view.dart:159:31 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_detail_view.dart:111:28 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\features\reports\presentation\views\incident_detail_view.dart:150:31 - unnecessary_underscores
+   info - Unnecessary use of multiple underscores - lib\features\reports\presentation\views\incident_detail_view.dart:258:26 - unnecessary_underscores
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_detail_view.dart:300:42 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:68:86 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:158:40 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_feed_view.dart:192:22 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\incident_map_view.dart:125:31 - deprecated_member_use
+   info - 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss - lib\features\reports\presentation\views\moderation_hub_view.dart:153:22 - deprecated_member_use
+   info - Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check - lib\features\reports\presentation\views\moderation_hub_view.dart:235:40 - use_build_context_synchronously
+
+21 issues found. (ran in 1.6s)
